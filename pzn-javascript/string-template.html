@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'John Doe';
+        let age = 25;
+        let city = 'Jakarta';
+
+        // Penggunaan string template
+        let message = `Halo, nama saya ${name}.
+        Saya berusia ${age} tahun.
+        Saya tinggal di ${city}.`;
+        console.log(message);
+
+        // Ekspresi dalam string template
+        let a = 5;
+        let b = 3;
+        let sum = `Jumlah dari ${a} dan ${b} adalah ${a + b}.`;
+        console.log(sum);
+
+        // Penggunaan fungsi dalam string template
+        function multiply(x, y) {
+        return x * y;
+        }
+        let product = `Hasil perkalian ${a} dan ${b} adalah ${multiply(a, b)}.`;
+        console.log(product);
+    </script>
+</body>
+</html>

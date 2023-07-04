@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperature = 30;
+
+        // Pernyataan if sederhana
+        if (temperature > 25) {
+        console.log("Suhu udara panas");
+        }
+
+        // Pernyataan if-else
+        if (temperature > 25) {
+        console.log("Suhu udara panas");
+        } else {
+        console.log("Suhu udara normal");
+        }
+
+        // Pernyataan if-else if-else
+        if (temperature > 30) {
+        console.log("Suhu udara sangat panas");
+        } else if (temperature > 25) {
+        console.log("Suhu udara panas");
+        } else {
+        console.log("Suhu udara normal");
+        }
+
+        // Pernyataan if bersarang (nested if)
+        let time = "malam";
+        if (temperature > 25) {
+        if (time === "siang") {
+            console.log("Suhu udara panas di siang hari");
+        } else {
+            console.log("Suhu udara panas di malam hari");
+        }
+        }
+
+        // Pernyataan if dengan operator logika
+        let isRainy = true;
+        let isSunny = false;
+        if (isRainy && !isSunny) {
+        console.log("Hari ini hujan");
+        }
+
+        // Pernyataan if dengan operator perbandingan
+        let number = 10;
+        if (number > 0) {
+        console.log("Angka positif");
+        } else if (number < 0) {
+        console.log("Angka negatif");
+        } else {
+        console.log("Angka nol");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Membuat array kosong
+        let emptyArray = [];
+        console.log(emptyArray); // Output: []
+
+        // Membuat array dengan elemen
+        let fruits = ['Apel', 'Jeruk', 'Mangga'];
+        console.log(fruits); // Output: ['Apel', 'Jeruk', 'Mangga']
+
+        // Mengakses elemen array
+        console.log(fruits[0]); // Output: 'Apel'
+        console.log(fruits[1]); // Output: 'Jeruk'
+        console.log(fruits[2]); // Output: 'Mangga'
+
+        // Mengubah elemen array
+        fruits[1] = 'Pisang';
+        console.log(fruits); // Output: ['Apel', 'Pisang', 'Mangga']
+
+        // Menambahkan elemen baru ke array
+        fruits.push('Semangka');
+        console.log(fruits); // Output: ['Apel', 'Pisang', 'Mangga', 'Semangka']
+
+        // Menghapus elemen dari array
+        fruits.pop();
+        console.log(fruits); // Output: ['Apel', 'Pisang', 'Mangga']
+
+        // Menghitung panjang array
+        console.log(fruits.length); // Output: 3
+
+        // Mengiterasi elemen array menggunakan perulangan for
+        for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+        }
+        // Output:
+        // 'Apel'
+        // 'Pisang'
+        // 'Mangga'
+
+        // Mengiterasi elemen array menggunakan metode forEach()
+        fruits.forEach(function (fruit) {
+        console.log(fruit);
+        });
+        // Output:
+        // 'Apel'
+        // 'Pisang'
+        // 'Mangga'
+    </script>
+</body>
+</html>

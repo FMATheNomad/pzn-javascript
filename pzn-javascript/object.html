@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Membuat objek kosong
+        let emptyObject = {};
+        console.log(emptyObject); // Output: {}
+
+        // Membuat objek dengan properti
+        let person = {
+        name: 'John Doe',
+        age: 25,
+        city: 'Jakarta'
+        };
+        console.log(person); // Output: { name: 'John Doe', age: 25, city: 'Jakarta' }
+
+        // Mengakses nilai properti objek
+        console.log(person.name); // Output: 'John Doe'
+        console.log(person.age); // Output: 25
+        console.log(person.city); // Output: 'Jakarta'
+
+        // Mengubah nilai properti objek
+        person.age = 30;
+        console.log(person); // Output: { name: 'John Doe', age: 30, city: 'Jakarta' }
+
+        // Menambahkan properti baru ke objek
+        person.job = 'Developer';
+        console.log(person); // Output: { name: 'John Doe', age: 30, city: 'Jakarta', job: 'Developer' }
+
+        // Menghapus properti objek
+        delete person.city;
+        console.log(person); // Output: { name: 'John Doe', age: 30, job: 'Developer' }
+
+        // Menghitung jumlah properti objek
+        console.log(Object.keys(person).length); // Output: 3
+
+        // Mengiterasi properti objek menggunakan perulangan for...in
+        for (let key in person) {
+        console.log(key + ':', person[key]);
+        }
+        // Output:
+        // 'name: John Doe'
+        // 'age: 30'
+        // 'job: Developer'
+    </script>
+</body>
+</html>

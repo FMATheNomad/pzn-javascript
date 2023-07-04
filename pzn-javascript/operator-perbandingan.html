@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 3;
+
+        // Operator Perbandingan
+        console.log('a > b:', a > b); // Output: true
+        console.log('a < b:', a < b); // Output: false
+        console.log('a >= b:', a >= b); // Output: true
+        console.log('a <= b:', a <= b); // Output: false
+        console.log('a === b:', a === b); // Output: false (sama dengan)
+        console.log('a !== b:', a !== b); // Output: true (tidak sama dengan)
+
+        // Operator Perbandingan pada String
+        let str1 = 'Hello';
+        let str2 = 'World';
+
+        console.log('str1 === str2:', str1 === str2); // Output: false
+        console.log('str1 !== str2:', str1 !== str2); // Output: true
+        console.log('str1 < str2:', str1 < str2); // Output: true
+        console.log('str1 > str2:', str1 > str2); // Output: false
+        console.log('str1 <= str2:', str1 <= str2); // Output: true
+        console.log('str1 >= str2:', str1 >= str2); // Output: false
+
+        // Operator Perbandingan pada Array
+        let arr1 = [1, 2, 3];
+        let arr2 = [1, 2, 3];
+
+        console.log('arr1 === arr2:', arr1 === arr2); // Output: false
+        console.log('arr1 !== arr2:', arr1 !== arr2); // Output: true
+
+        // Operator Perbandingan dengan Tipe Data yang Berbeda
+        let num = 5;
+        let str = '5';
+
+        console.log('num == str:', num == str); // Output: true (loose equality)
+        console.log('num === str:', num === str); // Output: false (strict equality)
+    </script>
+</body>
+</html>
