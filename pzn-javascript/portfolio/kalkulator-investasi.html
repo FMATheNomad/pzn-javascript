@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Investasi</title>
+</head>
+<body>
+    <script>
+        // Fungsi untuk menghitung investasi
+        function hitungInvestasi(jumlahInvestasi, tingkatBunga, jangkaWaktu) {
+        let total = jumlahInvestasi;
+        for (let tahun = 1; tahun <= jangkaWaktu; tahun++) {
+            let keuntungan = total * (tingkatBunga / 100);
+            total += keuntungan;
+        }
+        return total;
+        }
+        // Meminta input dari pengguna
+        let jumlahInvestasi = parseInt(prompt("Masukkan jumlah investasi awal:"));
+        let tingkatBunga = parseFloat(prompt("Masukkan tingkat bunga tahunan (%):"));
+        let jangkaWaktu = parseInt(prompt("Masukkan jangka waktu investasi (dalam tahun):"));
+        // Memanggil fungsi hitungInvestasi dan menyimpan hasilnya
+        let hasilInvestasi = hitungInvestasi(jumlahInvestasi, tingkatBunga, jangkaWaktu);
+        // Menampilkan hasil investasi
+        console.log("Total investasi setelah " + jangkaWaktu + " tahun: " + hasilInvestasi.toFixed(2));
+    </script>
+</body>
+</html>
