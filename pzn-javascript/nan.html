@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Operasi yang menghasilkan NaN
+        let result = "Hello" / 5;
+        console.log(result); // Output: NaN
+
+        // Memeriksa apakah nilai adalah NaN
+        let number = 10;
+        if (isNaN(number)) {
+        console.log("Nilai tidak valid");
+        } else {
+        console.log("Nilai valid");
+        }
+
+        // Memeriksa apakah hasil operasi adalah NaN
+        let calculation = 100 / "Apple";
+        if (isNaN(calculation)) {
+        console.log("Hasil operasi tidak valid");
+        } else {
+        console.log("Hasil operasi valid");
+        }
+    </script>
+</body>
+</html>
